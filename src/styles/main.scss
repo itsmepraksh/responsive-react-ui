@@ -1,0 +1,23 @@
+@use './mixins' as *;
+@use './variables' as *;
+@use './fonts' as *;
+@use '/src/layouts/Header/header';
+@use '/src/layouts/Navbar/navbar';
+@use '/src/pages/Home/home';
+@use '/src/components/Button/donateBtn';
+@use '/src/pages/Home/hero';
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,html{
+    height: 100%;
+    width: 100%;
+}
+
+body{
+    font-family: $font-primary; 
+}

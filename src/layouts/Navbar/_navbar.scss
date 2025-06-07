@@ -1,0 +1,76 @@
+@use '/src/styles/variables' as *;
+@use '/src/styles/mixins' as *;
+
+nav{
+    padding: $padding-elem-base;
+    @include flex-between;
+    background-color: $bgColor-secondary;
+     
+    h1{
+        svg{
+            padding: 0 0.5rem; 
+        color: $color-orange;
+        }
+    }
+
+    >svg{
+        padding: 1rem;
+        color: $color-base;
+        background-color: $color-orange;
+        border-radius: $rounded-elem-sm; 
+
+        &:active{
+            background-color: $bgColor-primary;
+        }
+    }
+
+    .navlinks{
+        display: none;
+    }
+
+    
+}
+
+
+@media (min-width:1024px) {
+    nav{  
+        h1{
+            font-size: $font-size-lg;
+        }
+
+        >svg{
+            display: none !important; 
+        }
+
+        .navlinks{
+            @include flex-between;  
+            gap: 3rem;
+            font-size: $font-size-mico;
+            font-weight: 500; 
+
+            a{
+                text-decoration: none;
+                color: $color-black;
+            }
+        }
+
+        .donate-btn{
+            background-color: $color-orange;
+            color: $color-base;
+            border-radius: $rounded-elem-sm;
+            margin: 0; 
+        }
+    }
+}
+
+@media (min-width:1440px) {
+    nav{
+        padding: $padding-elem-lg;
+    }
+}
+
+@media (min-width:2560px) {
+    nav{
+        padding: 3rem 45rem;
+    }
+}

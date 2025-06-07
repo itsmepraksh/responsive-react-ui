@@ -1,0 +1,104 @@
+ @use '/src/styles/variables' as *;
+ @use '/src/styles/mixins' as *;
+
+ header { 
+     background-color: $bgColor-primary;
+     border-radius: 0 0 $rounded-elem-base2 $rounded-elem-base2;
+     font-size: $font-size-base;
+     color: $color-base;
+     padding: $padding-elem-base ;
+
+     h4 {
+         display: none;
+
+         svg {
+             padding-right: $padding-elem-base2;
+             color: $color-highlight;
+         }
+     }
+
+     .contact-info {
+         text-align: center;
+         justify-content: space-between;
+
+         .contact-email {
+             display: inline;
+
+             svg {
+                 color: $color-highlight;
+                 padding: 0 clamp(0.5rem, 1vw, 1rem);
+             }
+         }
+
+         .contact-phoneNo {
+             display: inline;
+
+             svg {
+                 color: $color-highlight;
+                 padding: 0 clamp(0.5rem, 1vw, 1rem);
+             }
+         }
+
+         .social-icon {
+
+             display: flex;
+             justify-content: center;
+             padding: 1rem 0;
+             gap: 1rem;
+
+             svg {
+                 font-size: $font-size-md;
+             }
+         }
+     }
+ }
+
+ @media (min-width:768px) {
+     header {
+         margin: 0 $padding-elem-md ;
+         font-size: $font-size-md;
+
+         h4 {
+             display: block;
+             text-align: center;
+             font-weight: 300;
+             text-transform: uppercase;
+
+             .bold-text {
+                 font-weight: 500;
+             }
+         }
+
+         .contact-info {
+             @include flex-between;
+             justify-content: center;
+             gap: 2rem;
+         }
+     }
+ }
+
+ @media (min-width:1024px) {
+     header {
+         border-radius: 0 0 $rounded-elem-md $rounded-elem-md;
+         font-size: $font-size-base;
+         @include flex-between;
+         padding: 0 $padding-elem-md ;
+
+         h4 {
+             display: inline-block;
+         }
+     }
+ }
+
+ @media (min-width:1440px) {
+     header { 
+        padding:0.75rem 1.5rem ;
+         font-size: $font-size-base;
+     }
+ }
+
+ @media (min-width:2560px) {
+    header{ 
+        margin: 0 30rem;
+    }
+ }

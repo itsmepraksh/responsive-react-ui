@@ -1,0 +1,35 @@
+$font-primary : 'Manrope', sans-serif;
+$font-secondary : 'Caveat',sans-serif;
+
+$bgColor-primary :#122F2A;
+$bgColor-secondary :#F6F3EE;
+$color-base:#fff;
+$color-black:#000000;
+
+$color-highlight : #FFA415;
+$color-orange : #FF5528;
+$color-gray : #363636;
+
+$font-size-mico : clamp(1.15rem,1.5vw,1.75rem);
+$font-size-sm : clamp(0.9rem,1vw,1.15rem);
+$font-size-base : clamp(0.8rem,1.5vw,1.25rem);
+$font-size-md : clamp(1rem,2vw,1.5rem);
+$font-size-lg : clamp(1.5rem, 2.5vw,2rem);
+
+$rounded-elem-sm : clamp(2px,1vw,10px);
+$rounded-elem-base : clamp(0.9rem,1.5vw,1.5rem);
+$rounded-elem-base2 : clamp(1rem,1.5vw,1.5rem);
+$rounded-elem-md :clamp(1.25rem,2vw,1.5rem);
+$rounded-elem-lg :clamp(2.75rem,2vw,3.5rem);
+ 
+ 
+
+$padding-elem-base : clamp(1rem, 1.5vw, 1.25rem);
+$padding-elem-base2 : clamp(0.5rem, 1.5vw, 1.15rem);
+
+$padding-elem-md :clamp(1.25rem,2vw,1.5rem);
+$padding-elem-lg: clamp(2rem,2vw,3rem);
+$padding-elem-xl :clamp(3rem,2vw,4rem);
+$padding-elem-2xl :clamp(4rem,2vw,5rem);
+$padding-elem-3xl :clamp(6rem,2vw,8rem);
+

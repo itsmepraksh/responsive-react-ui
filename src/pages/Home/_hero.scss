@@ -1,0 +1,166 @@
+
+@use '/src/styles/variables' as *; 
+@use '/src/styles/mixins' as *;
+
+.hero-one{
+    background-color: $bgColor-secondary;
+
+    .upper-hero{
+    
+    padding: 2rem $padding-elem-base;
+    background-color: $bgColor-primary;
+    color: $color-base;
+    border-radius: $rounded-elem-base 0 0 $rounded-elem-base ;
+
+    h3{
+        font-family: $font-secondary;
+        text-transform: uppercase;
+        color: $color-highlight;
+        letter-spacing: 1px;
+        padding: $padding-elem-base 0;
+    }
+    .info-text{
+        padding: $padding-elem-base 0;
+    }
+    h1{
+        text-transform: capitalize;
+    }
+    .highlighted-text{
+        color: $color-orange;
+        text-decoration: underline;
+        text-underline-offset: 3px;
+        text-decoration-thickness:1px ;
+    }
+    a{
+        text-decoration: underline;
+        text-decoration-thickness:1px ;
+        text-underline-offset: 3px;     
+
+        svg{
+            font-size: $font-size-lg;
+            color: $color-orange;
+            padding: 0 $padding-elem-base;
+        }
+    }
+
+    img{
+        padding: $padding-elem-base 0;
+        width: 100%; 
+    }
+    
+    }
+
+    .lower-hero{
+        padding: $padding-elem-base;
+        text-align: center;
+
+        .service-elem{
+            padding: $padding-elem-base;
+
+            svg{
+                color: $color-highlight;
+                font-size: $font-size-lg;
+            }
+
+            h3{
+                padding: $padding-elem-base2 0;
+            }
+            p{
+                color: $color-gray;
+            }
+        }
+    }
+}
+
+
+@media (min-width:768px) {
+
+    .hero-one{
+        
+        .upper-hero{
+        padding: $padding-elem-2xl $padding-elem-md;
+            border-radius: $rounded-elem-lg 0 0 $rounded-elem-lg ;
+        
+        
+            h1{
+                font-size: 3rem;
+            }
+            .info-text{
+                width: 70%;
+                padding-bottom: $padding-elem-xl;
+            }
+
+            .donate-btn{
+                display: inline;
+                font-size: $font-size-md;
+            }
+
+            img{
+                padding: $padding-elem-xl $padding-elem-2xl;
+            }
+        }
+
+        .lower-hero{
+            @include flex-between;
+            padding: $padding-elem-2xl $padding-elem-lg;
+
+            .service-elem{
+                svg{
+                    font-size: 3rem;
+                }
+
+                h3{
+                    font-size: $font-size-lg;
+                }
+            }
+        }
+    }
+    
+}
+
+@media (min-width:1024px) {
+    .hero-one{
+        .upper-hero{ 
+             display: grid;
+             grid-template-areas:
+                "a f f"
+                "b f f"
+                "c f f"
+                "d f f"
+                "e f f"
+             ;
+
+             h3{
+                grid-area: a; 
+             }
+
+             h1{
+                grid-area: b; 
+
+             }
+
+            .info-text{
+                grid-area: c; 
+
+            }
+
+            .donate-btn{
+                grid-area: d;
+                display: inline;
+
+            }
+            a{
+                grid-area: e; 
+            }
+            img{
+                padding: 0;
+                grid-area: f;
+                margin-left: 1rem;
+                width: 100%; 
+
+            }
+        }
+
+        
+    }
+}

@@ -1,0 +1,16 @@
+@use '/src/styles/variables' as *;
+
+.donate-btn{
+    background-color: $color-highlight;
+    width: fit-content;
+    margin-bottom: $padding-elem-base;
+    padding: 1rem 2rem;
+    font-weight: 700;
+    border-radius: $rounded-elem-sm;
+    font-size: $font-size-base;
+
+    &:active{
+        scale: 0.9;
+        transition: 0.1s ease ;
+    }
+}
