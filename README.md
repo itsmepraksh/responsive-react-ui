@@ -1,12 +1,98 @@
-# React + Vite
+ 
+# 🚀 Responsive React Static Page
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A fully responsive static web page built with **React**, **SCSS modules**, and a **production-ready file structure**. This project follows best practices in component organization, scalability, and maintainable styling.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 📁 Project Structure
 
-## Expanding the ESLint configuration
+```
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+src/
+│
+├── assets/             # Images, fonts, etc.
+├── components/         # Reusable React components
+│   └── Header/
+│       ├── Header.jsx
+│       └── Header.module.scss
+├── pages/              # Top-level page components
+│   └── Home/
+│       ├── Home.jsx
+│       └── Home.module.scss
+├── styles/             # Global SCSS styles and variables
+│   ├── \_variables.scss
+│   └── \_mixins.scss
+├── App.jsx
+└── main.jsx
+
+````
+
+---
+
+## ✨ Features
+
+- ⚛️ Built with **React 18+**
+- 🎨 Uses **SCSS modules** for scoped styling
+- 📱 Fully **responsive design**
+- 📂 Clean and **scalable file structure**
+- 🚀 Focus on **production-level code quality**
+
+---
+
+## 🛠️ Getting Started
+
+### Prerequisites
+
+- Node.js 18+
+- npm or yarn
+
+### Installation
+
+```bash
+git clone https://github.com/itsmepraksh/responsive-react-ui.git
+cd react-static-boilerplate
+npm install
+# or
+yarn install
+````
+
+### Run the Development Server
+
+```bash
+npm run dev
+# or
+yarn dev
+```
+
+---
+
+## 🧱 Build for Production
+
+```bash
+npm run build
+# or
+yarn build
+```
+
+---
+
+## 📌 To-Do
+
+* [ ] Add more reusable components
+* [ ] Implement routing (React Router)
+* [ ] Add dark mode toggle
+* [ ] Deploy on Vercel/Netlify
+
+---
+
+## 📄 License
+
+This project is licensed under the [MIT License](LICENSE).
+
+---
+
+## 🙌 Acknowledgments
+
+Built with ❤️ by Prakash Samanta. Feel free to fork or suggest improvements!
+ 
